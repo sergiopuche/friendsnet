@@ -36,7 +36,7 @@ public class TestBookingDAOJPAImp {
 	public void init() {
 		this.bookingDAO = new BookingDAOJPAImpl(emMock);
 	}
-
+	//asdasd
 	@Test
 	public void testConstructor() {
 		// Arrange
