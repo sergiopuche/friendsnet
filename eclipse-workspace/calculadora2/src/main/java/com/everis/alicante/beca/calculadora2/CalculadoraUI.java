@@ -20,7 +20,8 @@ public class CalculadoraUI {
 			System.out.println("2.Resta ");
 			System.out.println("3.Multiplicacion ");
 			System.out.println("4.Division");
-
+			System.out.println("4.Division");
+			//asdasd
 			int opcion = sc.nextInt();
 			double resultado = 0;
 
