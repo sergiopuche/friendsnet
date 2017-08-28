@@ -36,15 +36,21 @@ public class PersonManagerIMPL implements PersonManager{
 	}
 
 	@Override
-	public void save(Iterable<Person> es) {
+	public Person save(Iterable<Person> es) {
 		// TODO Auto-generated method stub
-		
+		return null;
 	}
 
 	@Override
-	public void save(Person e) {
+	public Person save(Person e) {
 		// TODO Auto-generated method stub
-		
+		return null;
+	}
+
+	@Override
+	public Person relatePersons(Iterable<Person> persons) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
