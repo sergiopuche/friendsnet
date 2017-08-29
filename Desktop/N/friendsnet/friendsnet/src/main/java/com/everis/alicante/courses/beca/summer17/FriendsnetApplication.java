@@ -1,4 +1,4 @@
-package com.everis.alicante.courses.beca.summer17.friendsnet;
+package com.everis.alicante.courses.beca.summer17;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

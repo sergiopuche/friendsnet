@@ -3,30 +3,22 @@ package com.everis.alicante.courses.beca.summer17.entity;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-
-@Entity
-public class Person implements FNEntity {
+@Entity(name="groupTable")
+public class Group implements FNEntity {
+	
 	
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
-	private String name;
-	private String surname;
-	private String accountname;
 	@GeneratedValue
 	@Id
+	
+	private String surname;
+	private String accountname;
 	private Long id;
 	private byte[] picture;
-
 	
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
 	public String getSurname() {
 		return surname;
 	}
@@ -52,7 +44,9 @@ public class Person implements FNEntity {
 		this.picture = picture;
 	}
 	
-		
-
-
+	
+	
+	
 }
+
+

@@ -1,50 +1,59 @@
 package com.everis.alicante.courses.beca.summer17.impl;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.everis.alicante.courses.beca.summer17.DAO.PersonDao;
 import com.everis.alicante.courses.beca.summer17.entity.Person;
 import com.everis.alicante.courses.beca.summer17.manager.PersonManager;
 
+@Service
 public class PersonManagerIMPL implements PersonManager{
+	
+	@Autowired
+	PersonDao personDao;
 
 	@Override
 	public Person findById(Long id) {
-		// TODO Auto-generated method stub
-		return null;
+
+		return personDao.findById(id);
 	}
 
 	@Override
 	public Iterable<Person> findAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return personDao.findAll();
 	}
 
 	@Override
-	public void update(Person e) {
-		// TODO Auto-generated method stub
+	public Person update(Person e) {
+		
+		return personDao.update(e);
 		
 	}
 
 	@Override
-	public void update(Iterable<Person> es) {
-		// TODO Auto-generated method stub
+	public Iterable<Person>  update(Iterable<Person> es) {
 		
+		
+		return personDao.update(es);
 	}
 
 	@Override
 	public void remove(Person e) {
-		// TODO Auto-generated method stub
+		personDao.remove(e);
 		
 	}
 
 	@Override
-	public Person save(Iterable<Person> es) {
-		// TODO Auto-generated method stub
-		return null;
+	public Iterable<Person> save(Iterable<Person> es) {
+		
+		return personDao.save(es);
 	}
 
 	@Override
 	public Person save(Person e) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return personDao.save(e);
 	}
 
 	@Override

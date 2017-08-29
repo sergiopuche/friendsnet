@@ -8,11 +8,11 @@ public interface EntityDAO<E extends FNEntity, ID extends Serializable> {
 
 	E findById (ID id);
 	Iterable<E> findAll();
-	void update (E e);
-	void update (Iterable<E> es);
+	E update (E e);
+	Iterable<E> update (Iterable<E> es);
 	void remove (E e);
-	void save (Iterable<E> es) ;
-	void save (E e);
+	Iterable<E> save (Iterable<E> es) ;
+	E save (E e);
 	
 	
 }
