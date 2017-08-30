@@ -1,4 +1,5 @@
 package com.everis.alicante.courses.beca.summer17.controller;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -10,53 +11,55 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.everis.alicante.courses.beca.summer17.entity.Post;
 
-
 @RestController
 @RequestMapping("/like")
 
 public class LikeController {
 
-@Autowired
+	@Autowired
 	LikeController likeController;
 
-@GetMapping("/all")
-public Post findById(@PathVariable Long id) {
-	
-	return likeController.findById(id);
-}
+	@GetMapping("/all")
+	public Post findById(@PathVariable Long id) {
 
-@GetMapping
-public Iterable<Post> findAll() {
+		return likeController.findById(id);
+	}
 
-	return likeController.findAll();
-}
-@PutMapping("/all")
+	@GetMapping
+	public Iterable<Post> findAll() {
 
-public Post update(Post e) {
+		return likeController.findAll();
+	}
 
-	return likeController.update(e);
-}
-@PutMapping
-public Iterable<Post> update(Iterable<Post> es) {
-	return likeController.update(es);
-	
-}
+	@PutMapping("/all")
 
-public void remove(Post e) {
-	
-likeController.remove(e);
-	
-}
-@PostMapping("/all")
-public Iterable<Post> save(@RequestBody Iterable<Post> es) {
-	
-	return likeController.save(es);
-}
-@PostMapping
-public Post save(@RequestBody Post e) {
+	public Post update(Post e) {
 
-	return likeController.save(e);
-}
+		return likeController.update(e);
+	}
+
+	@PutMapping
+	public Iterable<Post> update(Iterable<Post> es) {
+		return likeController.update(es);
+
+	}
+
+	public void remove(Post e) {
+
+		likeController.remove(e);
+
+	}
+
+	@PostMapping("/all")
+	public Iterable<Post> save(@RequestBody Iterable<Post> es) {
+
+		return likeController.save(es);
+	}
+
+	@PostMapping
+	public Post save(@RequestBody Post e) {
+
+		return likeController.save(e);
+	}
 
 }
-

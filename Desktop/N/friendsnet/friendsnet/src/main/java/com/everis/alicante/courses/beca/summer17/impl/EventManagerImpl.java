@@ -10,51 +10,48 @@ import com.everis.alicante.courses.beca.summer17.manager.EventManager;
 @Service
 
 public class EventManagerImpl implements EventManager {
-	
+
 	@Autowired
 	private EventDAO eventDao;
-	
-@Override
+
+	@Override
 	public Event findById(Long id) {
 		return eventDao.findById(id);
-		
+
 	}
 
-@Override
+	@Override
 	public Iterable<Event> findAll() {
-		
+
 		return eventDao.findAll();
 	}
 
-@Override
+	@Override
 	public Event update(Event e) {
-		
+
 		return eventDao.update(e);
 	}
 
-@Override
+	@Override
 	public Iterable<Event> update(Iterable<Event> es) {
 		return eventDao.update(es);
 	}
 
-@Override
+	@Override
 	public void remove(Event e) {
-		
+
 		eventDao.remove(e);
 	}
 
-@Override
+	@Override
 	public Iterable<Event> save(Iterable<Event> es) {
-
 
 		return eventDao.save(es);
 	}
 
-@Override
+	@Override
 	public Event save(Event e) {
 		return eventDao.save(e);
 	}
 
-	
-	
 }
