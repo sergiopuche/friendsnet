@@ -1,7 +1,14 @@
 package com.everis.alicante.courses.beca.summer17.entity;
 
-import java.sql.Date;
 
+
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity(name="Likes")
 public class Like implements FNEntity{
 
 	/**
@@ -9,7 +16,8 @@ public class Like implements FNEntity{
 	 */
 	private static final long serialVersionUID = 1L;
 
-	
+	@GeneratedValue
+	@Id
 	private Long id;
 	private Date creationDate;
 	private Like typeOfLike;

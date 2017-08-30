@@ -2,14 +2,19 @@ package com.everis.alicante.courses.beca.summer17.entity;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+
+@Entity
 public class Event implements FNEntity {
 
-	
-		/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
-		
+	
+	@GeneratedValue
+	@Id	
+	
 	private Long id;
 	private Date creationDatePost;
 	private Date endingDatePost;

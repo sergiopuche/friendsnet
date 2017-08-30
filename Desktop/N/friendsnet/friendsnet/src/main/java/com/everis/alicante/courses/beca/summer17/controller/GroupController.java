@@ -17,6 +17,7 @@ import com.everis.alicante.courses.beca.summer17.manager.GroupManager;
 @RequestMapping("/group")
 
 public class GroupController{
+	
 	@Autowired
 	GroupManager groupManager;
 

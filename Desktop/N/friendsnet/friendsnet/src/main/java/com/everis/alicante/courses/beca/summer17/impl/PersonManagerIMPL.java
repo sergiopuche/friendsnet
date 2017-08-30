@@ -56,10 +56,4 @@ public class PersonManagerIMPL implements PersonManager{
 		return personDao.save(e);
 	}
 
-	@Override
-	public Person relatePersons(Iterable<Person> persons) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 }

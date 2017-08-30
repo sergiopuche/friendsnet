@@ -2,8 +2,11 @@ package com.everis.alicante.courses.beca.summer17.DAO;
 
 import java.io.Serializable;
 
+import org.springframework.stereotype.Service;
+
 import com.everis.alicante.courses.beca.summer17.entity.FNEntity;
 
+@Service
 public interface EntityDAO<E extends FNEntity, ID extends Serializable> {
 
 	E findById (ID id);

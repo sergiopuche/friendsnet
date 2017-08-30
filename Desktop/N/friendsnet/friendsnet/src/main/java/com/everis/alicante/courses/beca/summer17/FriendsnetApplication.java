@@ -10,5 +10,4 @@ public class FriendsnetApplication {
 		SpringApplication.run(FriendsnetApplication.class, args);}
 	
 	
-	
 }

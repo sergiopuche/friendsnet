@@ -18,7 +18,7 @@ public abstract class AbstractDAO<E extends FNEntity, ID extends Serializable> i
     private final Class<E> persistentClass;
 
     public AbstractDAO() {
-        this.persistentClass = (Class<E>) ((ParameterizedType) this.getClass().getGenericSuperclass())
+    	this.persistentClass = (Class<E>) ((ParameterizedType) this.getClass().getGenericSuperclass())
                 .getActualTypeArguments()[0];
     }
 

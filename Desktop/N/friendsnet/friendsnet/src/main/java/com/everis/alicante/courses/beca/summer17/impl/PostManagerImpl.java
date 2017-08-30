@@ -1,8 +1,9 @@
-package com.everis.alicante.courses.beca.summer17.manager;
+package com.everis.alicante.courses.beca.summer17.impl;
 
 import org.springframework.stereotype.Service;
 
 import com.everis.alicante.courses.beca.summer17.entity.Post;
+import com.everis.alicante.courses.beca.summer17.manager.PostManager;
 @Service
 public class PostManagerImpl implements PostManager {
 

@@ -13,7 +13,6 @@ public class Group implements FNEntity {
 	private static final long serialVersionUID = 1L;
 	@GeneratedValue
 	@Id
-	
 	private String surname;
 	private String accountname;
 	private Long id;

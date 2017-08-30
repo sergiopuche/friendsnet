@@ -12,11 +12,12 @@ public class Person implements FNEntity {
 	 */
 	private static final long serialVersionUID = 1L;
 	
+	@GeneratedValue
+	@Id
+	
 	private String name;
 	private String surname;
 	private String accountname;
-	@GeneratedValue
-	@Id
 	private Long id;
 	private byte[] picture;
 
